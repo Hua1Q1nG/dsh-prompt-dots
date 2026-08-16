@@ -1,0 +1,7 @@
+# dsh-prompt-dots bundle patch — wires the client plugin into the web profile.
+# Applied by the dsh loader as a bundle layer (see package.json dsh.bundle.patch).
+# Each insert entry loads the package as a host plugin; the host face is a
+# no-op and only carries the dsh.client browser half.
+- insert:
+    - id: prompt-dots
+      name: 'dsh-prompt-dots'
