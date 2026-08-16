@@ -73,8 +73,25 @@ dsh-prompt-dots/
 ├── lib/
 │   ├── index.js        # 宿主侧占位插件（no-op）
 │   └── client.js       # 浏览器侧实现：点位栏 + 悬停预览 + 点击跳转
+├── tests/
+│   └── client.test.mjs # 客户端自测套件（node --test，3 个用例）
+├── install/
+│   └── GLOBAL-UPDATE-GUIDE.md  # 「更新全局插件」总纲镜像
+├── UPDATE-GUIDE.md     # 本插件的更新检测与升级指南（每次 DSH 更新后提交给 DSH 执行）
 ├── LICENSE             # MIT
 └── README.md
+~~~
+
+## 🔄 更新检测
+
+每次 DSH 桌面版更新后，把本仓库的 <code>UPDATE-GUIDE.md</code> 提交给 DSH（或直接说「更新全局插件」），
+DSH 会按文档逐节执行兼容性检测：版本判定 → 快速体检 → （核心依赖变化时）跑 <code>tests/client.test.mjs</code>
+并核对 API 面清单 → 必要时同步 GitHub。检测报告模板见指南第 6 节。
+
+测试套件可随时本地运行：
+
+~~~bash
+node --test tests/client.test.mjs   # 期望 3/3 通过
 ~~~
 
 ## ⚠️ 兼容性说明
