@@ -8,7 +8,7 @@
 
 - DSH Desktop：0.1.9（曾验证 0.1.7）
 - 核心依赖（全部 `@deepseek-ai/*`）：0.1.0-rc.6；cordis 4.0.1
-- 本机 DSH 家目录 `<DSH_HOME>`：`C:\Users\15458\AppData\Roaming\dsh-desktop\harness`
+- 本机 DSH 家目录 `<DSH_HOME>`：`C:\Users\<用户名>\AppData\Roaming\dsh-desktop\harness`
 
 ## 1. 插件登记表（registry）
 

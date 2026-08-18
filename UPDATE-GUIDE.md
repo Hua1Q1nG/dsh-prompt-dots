@@ -10,11 +10,11 @@
 - 核心依赖（全部 `@deepseek-ai/*`）：0.1.0-rc.6；cordis 4.0.1
 - 插件版本：dsh-prompt-dots 0.1.0
 - GitHub 仓库：https://github.com/Hua1Q1nG/dsh-prompt-dots（分支 main）
-- 本机 DSH 家目录 `<DSH_HOME>`：`C:\Users\15458\AppData\Roaming\dsh-desktop\harness`
+- 本机 DSH 家目录 `<DSH_HOME>`：`C:\Users\<用户名>\AppData\Roaming\dsh-desktop\harness`
 
 ## 1. 检测更新（第 1 步：判断发生了什么变化）
 
-1. 读取桌面应用版本：`<安装目录>\resources\app\package.json` 的 `version`（安装目录通常是 `E:\program(E)\DSH\DSH Desktop`，以实际为准）。
+1. 读取桌面应用版本：`<安装目录>\resources\app\package.json` 的 `version`（安装目录通常是 `<安装目录>`，以实际为准）。
 2. 读取 DSH 核心版本：`<安装目录>\resources\app\node_modules\@deepseek-ai\dsh\package.json` 的 `version`。
 3. 结论判定：
    - 仅桌面壳版本号变化、核心依赖不变（仍是 rc.6 系列）→ 大概率兼容，执行第 2 节的快速体检；
